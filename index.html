@@ -9,6 +9,16 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="format-detection" content="telephone=no">
         <meta name="HandheldFriendly" content="true">
+
+        <script>
+     window.postMessage(JSON.stringify({
+            verb: 'success',
+            width: 400,
+            height: 400,
+            scrollWidth: 400,
+            scrollHeight: 400
+        }), '*');
+        </script>
 </head>
 <body>
 <div style="height:300px;background-color: blue">
