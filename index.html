@@ -11,13 +11,19 @@
         <meta name="HandheldFriendly" content="true">
 
         <script>
-     parent.postMessage(JSON.stringify({
+               
+               document.addEventListener("DOMContentLoaded", function(event) { 
+                      
+parent.postMessage(JSON.stringify({
             verb: 'success',
             width: 400,
             height: 400,
             scrollWidth: 400,
             scrollHeight: 400
         }), '*');
+});
+               
+     
         </script>
 </head>
 <body>
