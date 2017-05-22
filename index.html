@@ -11,24 +11,19 @@
         <meta name="HandheldFriendly" content="true">
 
         <script>
-               
-               document.addEventListener("DOMContentLoaded", function(event) { 
-                      
-parent.postMessage(JSON.stringify({
-            verb: 'success',
-            width: 400,
-            height: 400,
-            scrollWidth: 400,
-            scrollHeight: 400
-        }), '*');
-});
+                                   
        function windowLocation(){
              window.location.href = window.location.href;
        }  
                
-                function postMessage(){
+        function postMessage(){
              parent.postMessage("Test Message","*");
        } 
+               
+               var theDiv = document.getElementById("timer");
+              var content = document.createTextNode(new Date());
+              theDiv.appendChild(content);
+
         </script>
 </head>
 <body>
@@ -38,6 +33,7 @@ Test iFrame
        <button onclick="windowLocation()">windowLocation</button>
         <button onclick="postMessage()">postMessage</button>
 </div>
+       <div id="timer"></div>
      
 </body>
         </html>
