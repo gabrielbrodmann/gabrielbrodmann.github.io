@@ -22,7 +22,9 @@ parent.postMessage(JSON.stringify({
             scrollHeight: 400
         }), '*');
 });
-                  
+       function reloadFrame(){
+           window.location.href = window.location.href;
+       }    
         </script>
 </head>
 <body>
