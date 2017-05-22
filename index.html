@@ -21,6 +21,10 @@ parent.postMessage(JSON.stringify({
             scrollWidth: 400,
             scrollHeight: 400
         }), '*');
+                      
+                      function reloadFrame(){
+                      location.reload(false);
+                      }
 });
                
      
@@ -29,6 +33,7 @@ parent.postMessage(JSON.stringify({
 <body>
 <div style="height:300px;background-color: blue">
 Test iFrame
+       <button onclick="reloadFrame()">Reload</button>
 </div>
 </body>
         </html>
