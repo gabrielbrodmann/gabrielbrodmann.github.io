@@ -20,9 +20,7 @@
              parent.postMessage("Test Message","*");
        } 
                
-               var theDiv = document.getElementById("timer");
-              var content = document.createTextNode(new Date());
-              theDiv.appendChild(content);
+         
 
         </script>
 </head>
@@ -36,4 +34,9 @@ Test iFrame
        <div id="timer"></div>
      
 </body>
+              <script>
+                          var theDiv = document.getElementById("timer");
+              var content = document.createTextNode(new Date());
+              theDiv.appendChild(content);
+              </script>
         </html>
