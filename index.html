@@ -30,7 +30,7 @@ parent.postMessage(JSON.stringify({
 <body>
 <div style="height:300px;background-color: blue">
 Test iFrame
-       <button onclick="window.location.reload(true)">Reload</button>
+       <button onclick="self.window.location.reload(true)">Reload</button>
        <button onclick="reloadFrame()">Oh Oh</button>
 </div>
 </body>
