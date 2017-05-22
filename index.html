@@ -22,17 +22,13 @@ parent.postMessage(JSON.stringify({
             scrollHeight: 400
         }), '*');
 });
-               
-                function reloadFrame(){
-                      location.reload(false);
-                      }
-     
+                  
         </script>
 </head>
 <body>
 <div style="height:300px;background-color: blue">
 Test iFrame
-       <button onclick="reloadFrame()">Reload</button>
+       <button onclick="location.reload(false)">Reload</button>
 </div>
 </body>
         </html>
