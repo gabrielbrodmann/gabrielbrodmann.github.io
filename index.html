@@ -25,11 +25,7 @@
        } 
                
          document.cookie = "name=Gabriel Brodmann";
-               
-               if(document.cookie === ''){
-                    document.getElementById("confirm").style.display = 'block';
-               }
-               
+              
                var cookieContent = document.cookie;
 
         </script>
@@ -48,6 +44,11 @@
      
 </body>
               <script>
+                     
+                       if(document.cookie === ''){
+                    document.getElementById("confirm").style.display = 'block';
+               }
+               
                      
                      document.getElementById("cookie").textContent = cookieContent;
                      
