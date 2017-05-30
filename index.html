@@ -20,10 +20,14 @@
              parent.postMessage("Test Message","*");
        } 
                
+       function showPopUp(){
+           window.open('popup.html');  
+       } 
+               
          document.cookie = "name=Gabriel Brodmann";
                
                if(document.cookie === null){
-               
+                    document.getElementById("confirm").style.display = 'block';
                }
                
                var cookieContent = document.cookie;
