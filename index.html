@@ -14,12 +14,14 @@
               parent.postMessage("Test Message","*");
        } 
 
-       function showPopUp(){
-              window.open('popup.html', 'popup window', 'width=200,height=200');  
+       function showPopup(){
+              //window.open('popup.html', 'popup window', 'width=200,height=200');  
+              window.location.href="popup.html?previousUrl=" + window.location.href
        } 
 
        document.cookie = "name=Gabriel Brodmann";
        var cookieContent = document.cookie;
+            
 
        </script>
 </head>
@@ -32,7 +34,7 @@
        <div id="timer"></div>
        
        <div id="confirm" style="display:none;position:absolute;top:0;left:0;height:100%;width:100%;background-color:green">
-              Diese Seite verwendet Cookies. <a href="popup.html" target="_self">Möchten Sie Cookies zulassen?</a>
+              Diese Seite verwendet Cookies. <a href=“#“ onclick="showPopup()">Möchten Sie Cookies zulassen?</a>
        </div>
      
 </body>
