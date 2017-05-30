@@ -22,6 +22,10 @@
                
          document.cookie = "name=Gabriel Brodmann";
                
+               if(document.cookie === null){
+               
+               }
+               
                var cookieContent = document.cookie;
 
         </script>
@@ -33,6 +37,10 @@
        Cookie: <span id="cookie"></span>
 </div>
        <div id="timer"></div>
+       
+       <div id="confirm" style="display:none;">
+              Diese Seite verwendet Cookies. <a onclick="showPupUp()">Zulassen</a>
+       </div>
      
 </body>
               <script>
