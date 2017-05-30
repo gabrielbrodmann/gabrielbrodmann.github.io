@@ -15,8 +15,10 @@
        } 
 
        function showPopup(){
-              window.open('popup.html', 'popup window', 'width=200,height=200');  
-              //window.location.href="/popup.html?blkbURL=" + window.location.href
+              //window.open('popup.html', 'popup window', 'width=200,height=200');  
+              
+              window.parent.postMessage({name: 'cookieFix'});
+              
        } 
               
               function reload() {
