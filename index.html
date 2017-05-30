@@ -10,27 +10,27 @@
         <meta name="format-detection" content="telephone=no">
         <meta name="HandheldFriendly" content="true">
 
-        <script>
-                                   
-       function windowLocation(){
-             window.location.href = window.location.href;
-       }  
-               
-        function postMessage(){
-             parent.postMessage("Test Message","*");
-       } 
-               
-       function showPopUp(){
-           window.open('popup.html', 'popup window', 'width=200,height=200');  
-       } 
-               
-         document.cookie = "name=Gabriel Brodmann";
-              
-               var cookieContent = document.cookie;
+       <script>
 
-        </script>
+       function windowLocation(){
+              window.location.href = window.location.href;
+       }  
+
+       function postMessage(){
+              parent.postMessage("Test Message","*");
+       } 
+
+       function showPopUp(){
+              window.open('popup.html', 'popup window', 'width=200,height=200');  
+       } 
+
+       document.cookie = "name=Gabriel Brodmann";
+       var cookieContent = document.cookie;
+
+       </script>
 </head>
 <body style="background-color: #00FFFF">
+       
        <h1>Test iFrame</h1>
      
        Cookie: <span id="cookie"></span>
@@ -42,17 +42,14 @@
        </div>
      
 </body>
-              <script>
-                     
-                       if(document.cookie === ''){
-                    document.getElementById("confirm").style.display = 'block';
-               }
-               
-                     
-                     document.getElementById("cookie").textContent = cookieContent;
-                     
-                          var theDiv = document.getElementById("timer");
-              var content = document.createTextNode(new Date());
-              theDiv.appendChild(content);
-              </script>
-        </html>
+<script>
+
+       if(document.cookie === ''){
+              document.getElementById("confirm").style.display = 'block';
+       }
+
+       document.getElementById("cookie").textContent = cookieContent;
+       document.getElementById("timer").textContent = new Date();
+     
+</script>
+</html>
