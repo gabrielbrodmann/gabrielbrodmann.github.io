@@ -18,6 +18,10 @@
               //window.open('popup.html', 'popup window', 'width=200,height=200');  
               window.location.href="/popup.html?blkbURL=" + window.location.href
        } 
+              
+              function reload() {
+               window.location.href = window.location.href;      
+              }
 
        document.cookie = "name=Gabriel Brodmann";
        var cookieContent = document.cookie;
@@ -34,9 +38,9 @@
        <div id="timer"></div>
        
        <div id="confirm" style="display:none;position:absolute;top:0;left:0;height:100%;width:100%;background-color:yellow">
-              1 Diese Seite verwendet Cookies. <a style="cursor:pointer; text-decoration:underline" onclick="showPopup()">Möchten Sie Cookies zulassen?</a>
+              2 Diese Seite verwendet Cookies. <a style="cursor:pointer; text-decoration:underline" onclick="showPopup()">Möchten Sie Cookies zulassen?</a>
               
-              <button onclick="window.location.reload(true)">reload iframe</button>
+              <button onclick="reload()">reload iframe</button>
        
        </div>
      
